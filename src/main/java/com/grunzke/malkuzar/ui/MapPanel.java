@@ -7,11 +7,14 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Polygon;
 import java.awt.RenderingHints;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 import java.util.Collection;
 import java.util.Random;
 
 import javax.swing.JPanel;
 
+import org.codetome.hexameter.core.api.Hexagon;
 import org.codetome.hexameter.core.api.HexagonOrientation;
 import org.codetome.hexameter.core.api.HexagonalGrid;
 import org.codetome.hexameter.core.api.HexagonalGridBuilder;
@@ -19,6 +22,54 @@ import org.codetome.hexameter.core.api.HexagonalGridLayout;
 import org.codetome.hexameter.core.api.Point;
 
 public class MapPanel extends JPanel {
+  private HexagonalGrid grid;
+  
+  public MapPanel() {
+    grid = new HexagonalGridBuilder()
+        .setGridHeight(9)
+        .setGridWidth(13)
+        .setGridLayout(HexagonalGridLayout.RECTANGULAR)
+        .setOrientation(HexagonOrientation.POINTY_TOP)
+        .setRadius(32)
+        .build();
+    addHexSelectListener();
+  }
+  
+  private void addHexSelectListener() {
+    this.addMouseListener(new MouseListener() {
+      
+      @Override
+      public void mouseReleased(MouseEvent e) {
+        // TODO Auto-generated method stub
+        
+      }
+      
+      @Override
+      public void mousePressed(MouseEvent e) {
+        // TODO Auto-generated method stub
+        
+      }
+      
+      @Override
+      public void mouseExited(MouseEvent e) {
+        // TODO Auto-generated method stub
+        
+      }
+      
+      @Override
+      public void mouseEntered(MouseEvent e) {
+        // TODO Auto-generated method stub
+        
+      }
+      
+      @Override
+      public void mouseClicked(MouseEvent e) {
+        Hexagon hex = grid.getByPixelCoordinate(e.getX(), e.getY()).get();
+        System.out.println("Clicked " + hex.getGridX() + ":" + hex.getGridY() );
+      }
+    });
+  }
+  
   @Override
   protected void paintComponent(Graphics g) {
     super.paintComponent(g);
@@ -48,13 +99,7 @@ public class MapPanel extends JPanel {
     
     g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
     
-    HexagonalGrid grid = new HexagonalGridBuilder()
-        .setGridHeight(9)
-        .setGridWidth(13)
-        .setGridLayout(HexagonalGridLayout.RECTANGULAR)
-        .setOrientation(HexagonOrientation.POINTY_TOP)
-        .setRadius(32)
-        .build();
+    
     
     int i = 0;
     grid.getHexagons().forEach(hex -> {
