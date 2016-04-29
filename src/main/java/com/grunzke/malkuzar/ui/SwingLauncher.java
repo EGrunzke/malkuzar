@@ -12,7 +12,7 @@ public class SwingLauncher {
   private Container cp;
   private void createAndShowGUI() {
     // Create and set up the window.
-    JFrame frame = new JFrame("tmsim");
+    JFrame frame = new JFrame("Malkuzar");
     frame.setSize(800, 600);
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
