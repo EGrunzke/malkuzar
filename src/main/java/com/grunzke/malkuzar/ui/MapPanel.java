@@ -105,6 +105,7 @@ public class MapPanel extends JPanel {
       g.drawPolygon(p);
       g.drawString(hex.getId(), (int) b.getCenterX()-8, (int) b.getCenterY()+17);
     });
+    
   }
   
   private Polygon polyFromHex(Hexagon h) {

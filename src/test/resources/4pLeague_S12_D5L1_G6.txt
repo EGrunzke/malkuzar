@@ -1,0 +1,499 @@
+# Default game options
+# option strict-leech
+# option strict-darkling-sh
+# option strict-chaosmagician-sh
+# option errata-cultist-power
+# option mini-expansion-1
+# option shipping-bonus
+# option temple-scoring-tile
+# option email-notify
+# option maintain-player-order
+# option variable-turn-order
+# Randomize setup
+
+Round 1 scoring: SCORE7, SA/SH >> 5
+Round 2 scoring: SCORE8, TP >> 3
+Round 3 scoring: SCORE1, SPADE >> 2
+Round 4 scoring: SCORE6, TP >> 3
+Round 5 scoring: SCORE3, D >> 2
+Round 6 scoring: SCORE4, SA/SH >> 5
+
+Removing tile BON3
+Removing tile BON7
+Removing tile BON5
+
+Player 1: DimCrim
+Player 2: Maestro
+Player 3: Devastating_D
+Player 4: pwn
+
+auren	setup
+swarmlings	setup
+chaosmagicians	setup
+alchemists	setup
+
+auren	build C4
+swarmlings	build D2
+alchemists	build B5
+alchemists	build C1
+swarmlings	build H4
+auren	build G3
+chaosmagicians	build E3
+
+alchemists	Pass BON6
+chaosmagicians	Pass BON1
+swarmlings	Pass BON8
+auren	Pass BON2
+
+# Round 1 income
+auren	other_income_for_faction
+swarmlings	other_income_for_faction
+chaosmagicians	other_income_for_faction
+alchemists	other_income_for_faction
+
+# Round 1, turn 1
+auren	burn 3. action ACT2
+swarmlings	send p to AIR
+chaosmagicians	upgrade E3 to TP
+swarmlings	Leech 1 from chaosmagicians
+alchemists	upgrade B5 to TP
+auren	Leech 1 from alchemists
+
+# Round 1, turn 2
+auren	upgrade C4 to TP
+swarmlings	upgrade D2 to TP
+chaosmagicians	Leech 2 from swarmlings
+chaosmagicians	upgrade E3 to TE. +FAV8. +FAV9
+swarmlings	Leech 2 from chaosmagicians
+alchemists	Leech 2 from auren
+alchemists	Leech 1 from swarmlings
+alchemists	burn 4. action ACT3
+
+# Round 1, turn 3
+auren	action BON2. +AIR
+swarmlings	upgrade D2 to SH
+chaosmagicians	Leech 2 from swarmlings
+chaosmagicians	action BON1. build D3
+swarmlings	wait
+alchemists	Leech 1 from swarmlings
+alchemists	Leech 1 from chaosmagicians
+alchemists	upgrade B5 to SH. convert 1PW to 1C
+swarmlings	Leech 3 from chaosmagicians
+auren	Leech 2 from alchemists
+
+# Round 1, turn 4
+auren	send p to AIR
+swarmlings	action ACTS. Upgrade H4 to TP
+auren	Leech 1 from swarmlings
+chaosmagicians	pass BON4
+alchemists	action ACT6. build B4
+auren	Leech 2 from alchemists
+
+# Round 1, turn 5
+auren	upgrade C4 to SH. +FAV8
+swarmlings	Action ACT5. Build D1
+alchemists	Leech 4 from auren
+alchemists	pass BON1
+
+# Round 1, turn 6
+auren	action ACTA. +2AIR
+swarmlings	pass BON6
+
+# Round 1, turn 7
+auren	action ACT1. Bridge G3:F4
+auren	pass BON8
+
+# Round 2 income
+chaosmagicians	cult_income_for_faction
+alchemists	cult_income_for_faction
+swarmlings	cult_income_for_faction
+auren	cult_income_for_faction
+
+# Round 2 income
+chaosmagicians	other_income_for_faction
+alchemists	other_income_for_faction
+swarmlings	other_income_for_faction
+auren	other_income_for_faction
+
+# Round 2, turn 1
+chaosmagicians	action ACT5. transform C2 to red
+alchemists	upgrade C1 to TP
+chaosmagicians	Leech 1 from alchemists
+swarmlings	Leech 3 from alchemists
+swarmlings	upgrade H4 to TE. +FAV11
+auren	Leech 1 from swarmlings
+auren	upgrade G3 to TP
+swarmlings	Leech 2 from auren
+
+# Round 2, turn 2
+chaosmagicians	burn 1. action ACT3
+alchemists	upgrade C1 to TE. +FAV11
+swarmlings	Leech 3 from alchemists
+swarmlings	action ACT4
+chaosmagicians	Leech 1 from alchemists
+auren	upgrade G3 to TE. +FAV11
+swarmlings	Leech 2 from auren
+
+# Round 2, turn 3
+chaosmagicians	upgrade D3 to TP
+alchemists	Leech 2 from chaosmagicians
+alchemists	build A8
+swarmlings	Leech 3 from chaosmagicians
+swarmlings	action ACT6. transform E1 to blue. build H5
+auren	Leech 2 from swarmlings
+auren	send p to WATER
+
+# Round 2, turn 4
+chaosmagicians	upgrade D3 to TE. +FAV10. +FAV6
+swarmlings	Decline 3 from chaosmagicians
+alchemists	Leech 2 from chaosmagicians
+alchemists	action ACT2
+swarmlings	build E1
+auren	build F4
+
+# Round 2, turn 5
+chaosmagicians	build C2
+alchemists	action BON1. transform A7 to black
+swarmlings	action ACTS. Upgrade D1 to TP
+auren	action ACTA. +2EARTH
+
+# Round 2, turn 6
+chaosmagicians	send p to AIR
+alchemists	build A7
+swarmlings	pass BON2
+auren	convert 3PW to 3C. pass BON9
+
+# Round 2, turn 7
+chaosmagicians	action FAV6. +EARTH
+alchemists	pass BON6
+
+# Round 2, turn 8
+chaosmagicians	burn 1. convert 1PW to 1C. build D4
+chaosmagicians	pass BON1
+
+# Round 3 income
+swarmlings	cult_income_for_faction
+auren	cult_income_for_faction
+alchemists	cult_income_for_faction
+chaosmagicians	cult_income_for_faction
+swarmlings	transform F1 to green
+auren	transform D6 to green
+chaosmagicians	transform E6 to yellow
+
+# Round 3 income
+swarmlings	other_income_for_faction
+auren	other_income_for_faction
+alchemists	other_income_for_faction
+chaosmagicians	other_income_for_faction
+
+# Round 3, turn 1
+swarmlings	burn 3. action ACT4
+auren	action ACT5. build E7
+alchemists	advance ship
+chaosmagicians	Leech 1 from auren
+chaosmagicians	send p to EARTH
+
+# Round 3, turn 2
+swarmlings	advance dig
+auren	build D6
+alchemists	convert 1PW to 1C. upgrade B4 to TP. +TW4. convert 1PW to 1C
+chaosmagicians	send p to EARTH
+
+# Round 3, turn 3
+swarmlings	dig 1. build F1. +TW7
+auren	Leech 3 from alchemists
+auren	action ACT1. Bridge D6:E9
+alchemists	action ACT6. transform A4 to black. build B2
+chaosmagicians	Leech 1 from alchemists
+chaosmagicians	action BON1. build E6
+
+# Round 3, turn 4
+swarmlings	build H2
+auren	Leech 2 from chaosmagicians
+auren	send p to FIRE
+alchemists	burn 1. convert 2PW to 2C. build B3
+chaosmagicians	Leech 1 from alchemists
+chaosmagicians	action ACT3
+
+# Round 3, turn 5
+swarmlings	action ACTS. Upgrade H2 to TP
+auren	build E9
+alchemists	send p to WATER
+chaosmagicians	dig 1. build F3
+
+# Round 3, turn 6
+swarmlings	action BON2. +EARTH
+auren	Leech 1 from chaosmagicians
+auren	action ACTA. +2EARTH
+alchemists	pass BON10
+chaosmagicians	action FAV6. +WATER
+
+# Round 3, turn 7
+swarmlings	pass BON6
+auren	pass BON2
+chaosmagicians	pass BON9
+
+# Round 4 income
+alchemists	cult_income_for_faction
+swarmlings	cult_income_for_faction
+auren	cult_income_for_faction
+chaosmagicians	cult_income_for_faction
+
+# Round 4 income
+alchemists	other_income_for_faction
+swarmlings	other_income_for_faction
+auren	other_income_for_faction
+chaosmagicians	other_income_for_faction
+
+# Round 4, turn 1
+alchemists	upgrade B4 to TE. +FAV10
+swarmlings	action ACT4
+auren	Decline 3 from alchemists
+auren	convert 1PW to 1C. upgrade E7 to TP
+chaosmagicians	Leech 2 from auren
+chaosmagicians	burn 1. action ACT3
+
+# Round 4, turn 2
+alchemists	send p to WATER
+swarmlings	advance dig
+auren	action ACT5. build D5
+chaosmagicians	Leech 1 from auren
+chaosmagicians	send p to WATER
+
+# Round 4, turn 3
+alchemists	upgrade B3 to TP
+chaosmagicians	Leech 1 from alchemists
+swarmlings	upgrade H4 to SA. +FAV12
+auren	Decline 2 from swarmlings
+auren	upgrade D5 to TP. +TW6
+chaosmagicians	Leech 1 from auren
+chaosmagicians	build G2
+
+# Round 4, turn 4
+alchemists	upgrade B2 to TP
+chaosmagicians	Leech 1 from alchemists
+auren	Leech 1 from chaosmagicians
+swarmlings	action ACTS. Upgrade H5 to TP
+auren	Leech 2 from swarmlings
+auren	convert 2PW to 2C. action ACTA. +2WATER
+chaosmagicians	upgrade D4 to TP
+
+# Round 4, turn 5
+alchemists	convert 1PW to 1C. build A4
+auren	Decline 4 from chaosmagicians
+swarmlings	dig 1. transform H3 to black
+auren	advance ship
+chaosmagicians	upgrade E6 to TP
+
+# Round 4, turn 6
+alchemists	pass BON1
+swarmlings	convert 1PW to 1C. pass BON10
+auren	Decline 3 from chaosmagicians
+auren	action BON2. +EARTH
+chaosmagicians	action FAV6. +WATER
+
+# Round 4, turn 7
+auren	convert 4PW to 4C. pass BON6
+chaosmagicians	upgrade F3 to TP. +TW5. convert 3PW to 3C
+
+# Round 4, turn 8
+chaosmagicians	advance ship. convert 3PW to 1W. convert 2PW to 2C
+
+# Round 4, turn 9
+chaosmagicians	build I5
+chaosmagicians	pass BON2
+auren	Leech 1 from chaosmagicians
+
+# Round 5 income
+alchemists	cult_income_for_faction
+swarmlings	cult_income_for_faction
+auren	cult_income_for_faction
+chaosmagicians	cult_income_for_faction
+alchemists	transform A11 to black
+auren	transform C5 to green. transform F6 to green
+chaosmagicians	transform G1 to red. transform I7 to red
+
+# Round 5 income
+alchemists	other_income_for_faction
+swarmlings	other_income_for_faction
+auren	other_income_for_faction
+chaosmagicians	other_income_for_faction
+
+# Round 5, turn 1
+alchemists	action ACT4
+swarmlings	action ACT3
+auren	build F6
+chaosmagicians	action BON2. +FIRE
+
+# Round 5, turn 2
+alchemists	advance ship
+swarmlings	Dig 1. Build H3
+auren	action ACT5. build G6. +TW8
+chaosmagicians	send p to FIRE
+
+# Round 5, turn 3
+alchemists	build A11
+swarmlings	build I4
+chaosmagicians	Leech 1 from swarmlings
+auren	send p to EARTH
+chaosmagicians	burn 1. action ACT6. build F2
+swarmlings	Leech 1 from chaosmagicians
+
+# Round 5, turn 4
+alchemists	action BON1. transform D8 to black. build D8
+swarmlings	advance ship
+auren	build C3
+chaosmagicians	Leech 2 from auren
+chaosmagicians	upgrade F3 to TE. +FAV2. +FAV12
+auren	Leech 1 from chaosmagicians
+
+# Round 5, turn 5
+alchemists	send p to EARTH
+swarmlings	action ACTS. Upgrade H3 to TP
+auren	build C5
+chaosmagicians	build G1
+
+# Round 5, turn 6
+alchemists	build E10
+swarmlings	Decline 2 from chaosmagicians
+swarmlings	convert 1PW to 1C. advance ship
+auren	Decline 2 from alchemists
+auren	convert 1PW to 1C. build A10
+chaosmagicians	action FAV6. +FIRE
+alchemists	Decline 4 from auren
+
+# Round 5, turn 7
+alchemists	pass BON9
+swarmlings	action ACT2
+auren	action ACTA. +2FIRE
+chaosmagicians	convert 1P to 1W. build I7
+swarmlings	Decline 3 from chaosmagicians
+
+# Round 5, turn 8
+swarmlings	send p to AIR
+auren	action ACT1. Bridge D5:C4
+chaosmagicians	pass BON1
+
+# Round 5, turn 9
+swarmlings	dig 1. transform I2 to blue
+auren	pass BON2
+swarmlings	pass BON6
+
+# Round 6 income
+alchemists	cult_income_for_faction
+chaosmagicians	cult_income_for_faction
+auren	cult_income_for_faction
+swarmlings	cult_income_for_faction
+
+# Round 6 income
+alchemists	other_income_for_faction
+chaosmagicians	other_income_for_faction
+auren	other_income_for_faction
+swarmlings	other_income_for_faction
+
+# Round 6, turn 1
+alchemists	burn 2. action ACT1. Bridge B2:C1. +TW2
+chaosmagicians	action ACT4
+auren	action ACTA. +2FIRE
+swarmlings	action ACT3
+
+# Round 6, turn 2
+alchemists	upgrade E10 to TP
+chaosmagicians	upgrade F2 to TP
+swarmlings	Leech 1 from chaosmagicians
+auren	action BON2. convert 1PW to 1C. +FIRE
+swarmlings	build I2
+
+# Round 6, turn 3
+alchemists	dig 1. build F7
+chaosmagicians	upgrade E3 to SA. +FAV4. +FAV3. +TW2
+swarmlings	wait
+auren	Decline 2 from alchemists
+auren	advance dig
+swarmlings	Decline 3 from chaosmagicians
+swarmlings	Dig 1. Build E5
+
+# Round 6, turn 4
+alchemists	upgrade F7 to TP
+chaosmagicians	Decline 4 from swarmlings
+chaosmagicians	action BON1. build H1
+swarmlings	wait
+auren	Decline 2 from alchemists
+auren	convert 1PW to 1C. advance dig
+swarmlings	Decline 3 from chaosmagicians
+swarmlings	Convert 3pw to 3c. Upgrade H5 to TE. +FAV5. +TW1
+auren	Decline 2 from swarmlings
+
+# Round 6, turn 5
+alchemists	convert 2P to 2W. dig 1. build E11
+chaosmagicians	build I1
+swarmlings	Leech 1 from chaosmagicians
+auren	send p to WATER
+swarmlings	dig 2. build I9. +TW3
+
+# Round 6, turn 6
+alchemists	convert 1P to 1W. burn 2. convert 3PW to 1W. upgrade E10 to TE. +FAV5. +TW3
+chaosmagicians	convert 1PW to 1C. advance ship
+auren	Decline 2 from alchemists
+auren	burn 1. convert 7PW to 7C. convert 1W to 1C. upgrade G3 to SA. +FAV12
+swarmlings	Decline 5 from auren
+swarmlings	Build E4
+
+# Round 6, turn 7
+alchemists	send p to FIRE
+chaosmagicians	Decline 5 from swarmlings
+chaosmagicians	burn 2. convert 2PW to 2C. build A6
+auren	pass
+swarmlings	convert 1P to 1W. burn 2. convert 3PW to 3C. build I10
+alchemists	Decline 3 from chaosmagicians
+
+# Round 6, turn 8
+alchemists	pass
+chaosmagicians	action FAV6. +FIRE
+swarmlings	send p to FIRE
+
+# Round 6, turn 9
+chaosmagicians	pass
+swarmlings	action ACTS. Upgrade I10 to TP
+
+# Round 6, turn 10
+swarmlings	send p to FIRE
+swarmlings	pass
+
+# Scoring FIRE cult
+auren	+8vp for FIRE
+chaosmagicians	+4vp for FIRE
+swarmlings	+2vp for FIRE
+
+# Scoring WATER cult
+auren	+4vp for WATER
+alchemists	+2vp for WATER
+chaosmagicians	+8vp for WATER
+
+# Scoring EARTH cult
+auren	+8vp for EARTH
+alchemists	+1vp for EARTH
+chaosmagicians	+4vp for EARTH
+swarmlings	+1vp for EARTH
+
+# Scoring AIR cult
+auren	+8vp for AIR
+chaosmagicians	+4vp for AIR
+swarmlings	+2vp for AIR
+
+# Scoring network
+alchemists	+6vp for network
+chaosmagicians	+15vp for network
+swarmlings	+15vp for network
+
+# Converting resources to VPs
+auren	score_resources
+alchemists	score_resources
+chaosmagicians	score_resources
+swarmlings	score_resources
+
+# Final Scores
+# Swarmlings (Maestro)	147
+# Auren (DimCrim)	131
+# Alchemists (pwn)	127
+# Chaos Magicians (Devastating_D)	119
