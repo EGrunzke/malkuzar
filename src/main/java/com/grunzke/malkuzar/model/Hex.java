@@ -9,12 +9,17 @@ public class Hex {
   private AxialCoordinate coordinate;
   private Hexagon hexagon;
   private TileType tile;
+  private Structure structure;
   
   public Hex(String id, String key, TileType tile) {
+    this(id, key, tile, Structure.NONE);
+  }
+  public Hex(String id, String key, TileType tile, Structure structure) {
     this.id = id;
     this.key = key;
     this.coordinate = AxialCoordinate.fromKey(key);
     this.tile = tile;
+    this.structure = structure;
   }
   
   public String getId() {

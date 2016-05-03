@@ -1,25 +1,15 @@
 package com.grunzke.malkuzar.model;
 
-import static com.grunzke.malkuzar.ui.Colors.*;
 import static com.grunzke.malkuzar.model.TileType.*;
 
-import java.awt.Color;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
 public class OriginalMap {
-  public static Color[][] TILES = new Color[][] {
-    {YELLOW_TILE}
-  };
-  
   private Map<String, Hex> hexById;
   
   public OriginalMap() {
-    init();
-  }
-  
-  private void init() {
     hexById = new HashMap<>();
     createHex("A1", 0, 0, PLAINS);
     createHex("A2", 1, 0, MOUNTAIN);
