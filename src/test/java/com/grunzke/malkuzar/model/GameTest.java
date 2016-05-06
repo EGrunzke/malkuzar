@@ -1,6 +1,12 @@
 package com.grunzke.malkuzar.model;
 
 import org.junit.Test;
+
+import com.grunzke.malkuzar.model.factions.Alchemists;
+import com.grunzke.malkuzar.model.factions.Auren;
+import com.grunzke.malkuzar.model.factions.ChaosMagicians;
+import com.grunzke.malkuzar.model.factions.Swarmlings;
+
 import static org.junit.Assert.*;
 
 import java.util.Iterator;
@@ -34,5 +40,10 @@ public class GameTest {
     Player pwn = i.next();
     assertEquals("pwn", pwn.getName());
     assertEquals(4, pwn.getNum());
+    
+    g.selectFaction(new Auren());
+    g.selectFaction(new Swarmlings());
+    g.selectFaction(new ChaosMagicians());
+    g.selectFaction(new Alchemists());
   }
 }
